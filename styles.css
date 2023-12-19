@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+}
+header{
+    background-color: #250325;
+    color: #fff;
+    padding: 10px 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 1.2rem;
+}
+.logo{
+    font-size: 1.5rem;
+    margin-right: 40px;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links li{
+    margin-right: 30px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.6s;
+}
+.nav-links a:hover {
+    color: rgb(218, 116, 218);
+    font-size: 1.2rem;
+}
+/* Hero Section Styles */
+.hero{
+    padding: 80px 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: transform 0.3s;
+    font-size: 2rem;
+    background-image: url('photo-1555949963-ff9fe0c870eb.avif'); 
+    background-size: cover; 
+    background-position: center; 
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 590px;
+}
+.portrait img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.intro{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    transition: transform 0.3s;
+    font-size: 2rem;
+}
+.intro :hover{
+    transform: scale(1.2);
+}
+/* About Me Section Styles */
+.about{
+    background-color: #111;
+    color: #fff;
+    padding: 60px 0; 
+    text-align: center;
+}
+
+.about-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2{
+    font-size: 2rem;
+    color: #a15ae3;
+    margin-bottom: 20px;
+}
+
+.about p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+/* Services Section Styles */
+.services-section{
+    background-color: #111;
+    padding: 60px 0; 
+    text-align: center;
+}
+
+.services-section h2{
+    margin-bottom: 25px;
+    font-size: 2 rem;
+    color: white;
+}
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.service-card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    width: calc(33.33% - 30px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.service-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon{
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.service-title{
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-description {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+
+/* Projects Section Styles */
+.project-section {
+    text-align: center;
+    padding: 30px;
+}
+.project-section h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+.cta-button:hover {
+    background-color: #0056b3;
+}
+/* Contact Me Section Styles */
+.contact{
+    background-color: #111;
+    color: #fff;
+    padding: 0; 
+    text-align: center;
+    margin: 0; 
+    border-top: 1px solid #a15ae3; 
+}
+
+.contact-content{
+    max-width: 100%;
+    margin: 0 ;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+}
+.contact h2{
+    font-size: 2rem;
+    color: #a15ae3;
+    margin-bottom: 20px;
+}
+.contact p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+
+}
+.contact ul{
+    list-style: none;
+    padding: 0;
+}
+.contact li{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.contact i{
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+/* Copyright Section Styles */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.copyright{
+    font-size: 1.1rem;
+}
+
+/* Reach me  Form Styles */
+.contact-form{
+    background-color: lavender; 
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 80%;
+    max-height: 100%;
+}
+
+
+.contact-form h1{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-form label{
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+.contact-form button{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form button:hover{
+    background-color: darkblue;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        margin: 10px;
+    }
+}
+
+/* Style the multi-channel circle container */
+.multi-channel-circle {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style the channel icons */
+.channel-icon {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.channel-icon:hover {
+    background-color: #a15ae3
+    ;
+}
+
+.channel-icon a {
+    text-decoration: none;
+    transition: color 0.6s;
+}
+
+.channel-icon img {
+    max-width: 100%; 
+    max-height: 100%;
+}
